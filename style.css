@@ -1,0 +1,549 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Global style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+/* h1 {
+    color: #383838;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif; 
+    background-color: #f5f5f5;  
+    padding: 3rem 0;
+} */
+
+
+h1 {
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: 'Alegreya Sans', sans-serif; 
+    font-weight: 700;
+    text-align: center; 
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 15rem;
+        margin-bottom: 10rem;
+    }
+}
+
+h3 {
+    color: #104734;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;   
+    padding: 1rem 0;
+}
+
+h4 {
+    color: #104734;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Alegreya Sans', sans-serif;   
+}
+
+h5 {
+    color: #104734;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;    
+}
+
+p {
+    margin: 2rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        margin: 6rem 0;
+    }   
+}
+
+img {
+    border-radius: .5rem;
+}
+
+/* .logo-white {
+    width: 30%;
+    background-color: #ffffff;
+    border: none;
+} */
+/* .logo-white {
+    width: 5rem;
+    padding: 0important!;
+    margin: 0important!;
+} */
+/* a {
+   margin: 0;
+
+} */
+.logo {
+    width: 4rem; 
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 7rem; 
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    /* display: flex;
+    justify-content: center; */
+    /* padding: 0;
+    margin: 0; */
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+}
+/* @media screen and (min-width: 1200px) {
+    #navbarContent {
+        display: flex;
+        justify-items:center;
+    }
+} */
+
+.navbar-nav a {
+    color: #303030;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.4rem;
+    border-top: 1px solid #dcdcdc;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav a {
+        border-top: none;
+        padding: 0;
+        margin: 0 .5rem;
+        border: 1px solid #ffffff;
+        border-radius: .5rem;
+        transition: .5s;
+        color: #104734;
+    }
+}
+
+.navbar-nav a:hover{
+    color: #104734;
+    transform: scale(1.1);
+    background-color: #f5f5f5;
+    border: 1px solid #104734;
+    border-radius: .3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .active {
+        background-color: #f5f5f5;
+        /* border: 1px solid #104734; */
+        margin: 1rem;
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+/* Top */
+.top {
+    margin-bottom: 15rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .top {
+        margin: 8rem 0 15rem;
+    }   
+}
+
+/* background */
+/* .bottle-green {
+    color: #006a4e;
+} */
+.about-joga-text {
+    margin-top: 65%;
+    padding: 1rem 1rem .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .about-joga-text {
+        padding: 3rem 1rem 2rem;
+    }
+}
+
+.wrap {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    transition: opacity 2s ease;
+    width: 100%;
+}
+
+.background:hover {
+    opacity: 0;
+}
+
+/* About me */
+.bg-grey {
+    background-color: #f5f5f5;
+}
+.about-me {
+    background-color: #f5f5f5;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center ;
+}
+
+.title {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 3rem;
+}
+.my-picture-col {
+    /* display: flex;
+    align-items: flex-start; */
+    /* padding: 0;  */
+}
+
+.my-picture {
+    width:100%; 
+    
+}
+
+.about-me {
+    /* display: flex;
+    justify-content: center; */
+    
+    
+    /* display: flex;
+    align-items: center; */
+    /* padding-right: 5rem; */
+} 
+
+.text-about-me {
+    font-weight: 300;
+    text-align: center;
+}
+
+/*Gallery*/
+.gallery {
+    background-color: #f5f5f5;
+    padding-bottom: 5rem;
+}
+
+.about-studio-text {
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.place-picture {
+    width: 40rem;
+}
+
+.images {
+    margin: 2% 1%;
+    width: 10%;
+}  
+
+a img {
+    transition: .5s;
+    padding: 3%;
+}
+
+a img:hover {
+    filter: grayscale(35%);
+    transform: scale(1.1);
+    color: #104734;
+}
+
+/* Rodzaje zajec */
+.our-offer {
+    background-color: #f5f5f5;
+    font-weight: 300;
+    padding-bottom: 5rem;
+}
+
+.classes {
+    padding: 1rem;
+    margin: 4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .classes {
+        padding: 3rem 10rem;
+        margin: 6rem 2rem;
+    }
+}
+
+.mini-picture {
+    width: 100%
+}
+
+@media screen and (min-width: 768px) {
+    .mini-picture {
+        padding: 1rem 5rem;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cennik */
+.price-list {
+    background-color: #f5f5f5;
+    padding-bottom: 6rem;
+}
+
+.price {
+    width: 16rem;
+    height: 12rem;
+    background-color: #ffffff;
+    /* border: 2px solid #104734; */
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.about-price {
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+    width: 8rem;
+}
+
+/* Rooster */
+/* .our-rooster {
+    padding: 0 0 5rem;
+} */
+
+.rooster {
+    width: 12rem;
+    height: 25rem;
+    background-color: #ffffff;
+    /* border: 2px solid #104734; */
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    text-align: center;
+}
+
+
+/* Regulamin */
+.regulations-wrapper {
+    background-color: #f5f5f5;
+    padding: 0 1rem;
+}
+
+.regulations {
+    font-weight: 300;
+    padding: .5rem!important;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .regulations {
+       padding: 5rem!important;  
+    }
+}
+
+.download {
+    display: flex;
+    justify-content:  center;
+}
+
+/* Kontakt */
+.contact {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.contact p {
+    padding: 0 1rem 0;
+    margin: 0;
+}
+
+.form {
+    background-color: #fbfbfb;
+    padding: 4rem;
+}
+
+/*Go up*/
+.go-up {
+    text-align: center;
+}
+
+/* Stopka */
+.footer-col{
+    padding: 0;
+    margin: 0;
+}
+.site-footer {
+    padding-top: 8rem;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-green {
+    width: 20.3rem;
+    height: 100%;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+a, .bottle-green {
+    color: #104734;
+}
+
+.logo-col {
+   display: flex;
+}
+
+.contact-col {
+    background-color: #ffffff;
+    padding: 1.93rem 2.25rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.address-col  {
+    background-color: #f5f5f5;
+    padding: 1rem 4rem 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .address-col  {
+        background-color: #f5f5f5;
+        padding: 4rem;
+        margin: 0 2rem;
+    }
+}
+
+.contact-col h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    padding: 0;
+}
+
+.phone-nr {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.2rem;
+}
+
+.email-address {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+.phone, .email {
+    display: flex;
+    justify-content: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.1rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    border: 1px solid transparent;
+    /* transition: 1s; */
+    
+}
+
+.phone:hover, .email:hover {
+    text-align: center;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    color: #777777;
+    padding: .5rem;
+    border-radius: .3rem;
+    border: 1px solid #104734;
+}
+
+.footer-col p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.icon-dark-red {
+    color: #104734;
+    padding-right: 1rem;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+button {
+    color: #104734;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1.1rem;
+    margin: 1rem;
+    border-radius: .2rem;
+    border: 1px solid #104734;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    text-decoration: none!important;
+}
+
+/* Copyright */
+.copyright {
+    padding: 10rem 0 2rem;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    font-size: .9rem;
+    color: #a9a9a9;
+    background-color: #383838;
+}
+
+@media screen and (min-width: 768px) {
+    .copyright {
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+.copyright-designed {
+    font-size: .7rem;
+}
+
